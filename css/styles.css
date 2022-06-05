@@ -142,7 +142,8 @@ body {
   mask-repeat: no-repeat;
 }
 
-.head-mail:hover {
+.head-mail:hover,
+.head-mail:focus {
   color: var(--accent);
 }
 
@@ -165,7 +166,8 @@ body {
   mask-repeat: no-repeat;
 }
 
-.head-phone:hover {
+.head-phone:hover,
+.head-phone:focus {
   color: var(--accent);
 }
 
@@ -560,6 +562,12 @@ body {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
+}
+
+.project-card:hover,
+.project-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-img {
