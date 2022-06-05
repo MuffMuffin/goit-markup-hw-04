@@ -7,7 +7,6 @@
   --accent: #2196f3;
   --secondaryacc: #188ce8;
   --footeraddress: rgba(255, 255, 255, 0.6);
-  /* --outside: #e5e5e5; */
   --primarybg: #fff;
   --secondarybg: #2f303a;
   --morebackground: #f5f4fa;
@@ -136,9 +135,13 @@ body {
   height: 12px;
   margin-right: 10px;
   background-color: currentColor;
+  -webkit-mask-image: url(../images/envelope.svg);
   mask-image: url(../images/envelope.svg);
+  -webkit-mask-size: contain;
   mask-size: contain;
+  -webkit-mask-position: center;
   mask-position: center;
+  -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 }
 
@@ -160,9 +163,13 @@ body {
   height: 16px;
   margin-right: 10px;
   background-color: currentColor;
+  -webkit-mask-image: url(../images/smartphone.svg);
   mask-image: url(../images/smartphone.svg);
+  -webkit-mask-size: contain;
   mask-size: contain;
+  -webkit-mask-position: center;
   mask-position: center;
+  -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 }
 
