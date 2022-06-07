@@ -181,14 +181,11 @@ body {
 /* ----------- Hero Styles ----------- */
 
 .hero {
-  background: var(--secondarybg);
-}
-
-.herobg {
-  width: 1600px;
+  max-width: 1600px;
   height: 600px;
   margin: 0 auto;
-  padding: 200px 215px;
+  padding: 200px 200px;
+  background-color: var(--secondarybg);
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -339,7 +336,6 @@ body {
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  padding-bottom: 30px;
 }
 
 .team-img {
@@ -364,9 +360,9 @@ body {
 
 .teamsoc-grid {
   display: flex;
-  width: 206px;
   margin: 0 auto;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .teamsoc-item:not(:last-child) {
@@ -445,6 +441,7 @@ body {
 
 .foot-flex {
   display: flex;
+  align-items: baseline;
 }
 
 .logo.white {
@@ -476,8 +473,8 @@ body {
 }
 
 .footer-soc {
-  width: 206px;
-  margin-top: 12px;
+  /* width: 206px; */
+  /* margin-top: 12px; */
   margin-left: 70px;
 }
 
@@ -571,8 +568,12 @@ body {
   margin-bottom: 30px;
 }
 
-.project-card:hover,
-.project-card:focus {
+.card-link {
+  display: block;
+}
+
+.card-link:hover,
+.card-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
